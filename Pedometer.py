@@ -96,6 +96,8 @@ while True:
         #button B decreases step goal by default number of steps, with a minimum goal of default
         if cp.button_b:
             stepGoal -= default
+            if stepGoal < default:
+                stepGoal = default
             time.sleep(0.2)
             print(stepGoal)
 
