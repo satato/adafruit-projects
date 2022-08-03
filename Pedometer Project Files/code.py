@@ -21,7 +21,7 @@ def read_goal(goal, count):
     step_goal = str(goal)
     time.sleep(0.2)
     for digit in step_goal:
-        cp.play_file('mobile banking/{}.wav'.format(int(digit)))
+        cp.play_file('{}.wav'.format(int(digit)))
 
     cp.pixels.fill(0)
     time.sleep(0.2)
@@ -36,7 +36,7 @@ def read_count(count):
     steps = str(count)
     time.sleep(0.2)
     for digit in steps:
-        cp.play_file('mobile banking/{}.wav'.format(int(digit)))
+        cp.play_file('{}.wav'.format(int(digit)))
 
     cp.pixels.fill(0)
 
